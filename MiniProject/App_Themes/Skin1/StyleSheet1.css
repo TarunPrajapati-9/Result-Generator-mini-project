@@ -1,0 +1,11 @@
+﻿body {
+    background-image: url('Pics/pexels-veeterzy-303383.jpg');
+}
+table{
+     border:groove;
+     text-align:center;
+    background-color:greenyellow;
+}
+h3{
+    color:mediumblue;
+}

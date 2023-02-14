@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MiniProject.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 103%;
+            height: 718px;
+        }
+        .auto-style2 {
+            width: 227px;
+        }
+        .auto-style3 {
+            height: 26px;
+        }
+        .auto-style4 {
+            width: 1311px;
+            height: 751px;
+        }
+        .auto-style5 {
+            width: 227px;
+            height: 144px;
+        }
+        .auto-style6 {
+            width: 156px;
+            height: 78px;
+        }
+        .auto-style9 {
+            width: 227px;
+            height: 78px;
+        }
+        .auto-style10 {
+            height: 78px;
+            width: 271px;
+        }
+        .auto-style11 {
+            width: 172px;
+            height: 78px;
+        }
+        .auto-style12 {
+            width: 226px;
+            height: 78px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div align="center" class="auto-style4">
+            <p></p>
+            <table class="auto-style1" style="border-style: double; background-color: #00FFFF; text-align: center;">
+                <tr>
+                    <td colspan="5" class="auto-style3" style="border-style: groove"><h1><u style="background-image: url('/Pics/pexels-veeterzy-303383.jpg'); font-family: Algerian; color: #FF0000">T & V Institute of ENG. & TECH. USA</u></h1></td>
+                </tr>
+                <tr>
+                    <td class="auto-style9" style="border-style: groove; background-color: #99CC00; font-family: Elephant; color: #000066;">Options</td>
+                    <td style="border-style: groove; background-image: url('/Pics/pexels-hasan-albari-1229861.jpg');" class="auto-style12">
+                        <asp:Button ID="insert" runat="server" BorderStyle="Double" Text="Insert Data" OnClick="insert_Click" CausesValidation="False" Height="100px" Width="300px" />
+                    </td>
+                    <td style="border-style: groove; background-image: url('/Pics/pexels-hasan-albari-1229861.jpg');" class="auto-style10">
+                        <asp:Button ID="update" runat="server" BorderStyle="Double" Text="Update Result" OnClick="update_Click" CausesValidation="False" Height="100px" Width="300px" />
+                    </td>
+                    <td style="border-style: groove; background-image: url('/Pics/pexels-hasan-albari-1229861.jpg');" class="auto-style11">
+                        <asp:Button ID="delete" runat="server" BorderStyle="Double" Text="Delete Data" OnClick="delete_Click" CausesValidation="False" Height="100px" Width="300px" />
+                    </td>
+                    <td style="border-style: groove; background-image: url('/Pics/pexels-hasan-albari-1229861.jpg');" class="auto-style6">
+                        <asp:Button ID="search" runat="server" BorderStyle="Double" Text="Search Result" OnClick="search_Click" CausesValidation="False" Height="100px" Width="300px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2" style="border-style: groove; background-image: url('/Pics/pexels-pixabay-531880.jpg');">
+                        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/login.aspx" BackColor="#999966" Height="35px" Width="150px" BorderStyle="Groove" CausesValidation="False">Logout</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton2" runat="server" BackColor="#999966" Height="48px" PostBackUrl="~/home1.aspx" Width="150px" BorderStyle="Groove" CausesValidation="False">Go Back To HomePage</asp:LinkButton>
+                    </td>
+                    <td rowspan="2" colspan="4" style="border-style: groove">   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder></td>
+                </tr>
+                <tr>
+                    <td class="auto-style5" style="border-style: groove; background-color: #003300; color: #FFFF00; font-family: Algerian;">Created By Tarun(206120316008)<br />
+                        &amp;
+                        <br />
+                        Vaibhav<br />
+                        (206120316015)</td>
+                </tr>
+            </table>
+         
+        </div>
+    </form>
+</body>
+</html>
